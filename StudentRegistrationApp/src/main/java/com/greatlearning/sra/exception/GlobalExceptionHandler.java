@@ -17,7 +17,7 @@ public class GlobalExceptionHandler {
 
 	@ExceptionHandler(value = NoSuchElementException.class)
 	@ResponseStatus(code = HttpStatus.NOT_FOUND)
-	public String invalidEmployeeId(NoSuchElementException exception) {
+	public String invalidStudentId(NoSuchElementException exception) {
 
 		return "Invalid Student Id passed.";
 	}
